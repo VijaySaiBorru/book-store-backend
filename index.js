@@ -4,9 +4,7 @@ const app = express()
 const port=process.env.PORT || 5000;
 const cors=require('cors');
 require('dotenv').config();
-// bvijaysai2005
-// ZCy9mTekEZdrgtz4
-// ZCy9mTekEZdrgtz4
+
 
 //middleware
 app.use(express.json());
@@ -34,5 +32,5 @@ async function main(){
 main().then(()=>console.log("Mongodb connect successfully!")).catch(err => console.error(err));
 
 app.listen(port,()=>{
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Book app listening on port ${port}`)
 })
